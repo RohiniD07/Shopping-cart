@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaplex Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            margin-bottom: 0;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-price {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .btn {
+            margin-right: 5px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Olaplex</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Cart <span id="cart-item-count" class="badge badge-primary">0</span></a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="products" class="container mt-5">
+    <h2 class="text-center mb-4">Our Olaplex Products</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4" data-product-id="olaplex-3" data-product-name="Olaplex No. 3 Hair Perfector" data-product-price="30">
+            <div class="card product-card">
+                <img src="https://th.bing.com/th/id/OIP.3FXlLtdPju7_MYI0Rz7BVQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Olaplex No. 3">
+                <div class="card-body">
+                    <h5 class="card-title">Olaplex No. 3 Hair Perfector</h5>
+                    <p class="card-text">Repairs and strengthens damaged hair.</p>
+                    <p class="product-price">$30</p>
+                    <button class="btn btn-success add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-primary buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product-id="olaplex-4" data-product-name="Olaplex No. 4 Bond Maintenance Shampoo" data-product-price="30">
+            <div class="card product-card">
+                <img src="https://th.bing.com/th/id/OIP.3FXlLtdPju7_MYI0Rz7BVQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Olaplex No. 4">
+                <div class="card-body">
+                    <h5 class="card-title">Olaplex No. 4 Bond Maintenance Shampoo</h5>
+                    <p class="card-text">Hydrates and repairs while cleansing.</p>
+                    <p class="product-price">$30</p>
+                    <button class="btn btn-success add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-primary buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product-id="olaplex-5" data-product-name="Olaplex No. 5 Bond Maintenance Conditioner" data-product-price="30">
+            <div class="card product-card">
+                <img src="https://th.bing.com/th/id/OIP.3FXlLtdPju7_MYI0Rz7BVQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Olaplex No. 5">
+                <div class="card-body">
+                    <h5 class="card-title">Olaplex No. 5 Bond Maintenance Conditioner</h5>
+                    <p class="card-text">Restores and strengthens hair.</p>
+                    <p class="product-price">$30</p>
+                    <button class="btn btn-success add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-primary buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product-id="olaplex-6" data-product-name="Olaplex No. 6 Bond Smoother" data-product-price="30">
+            <div class="card product-card">
+                <img src="https://th.bing.com/th/id/OIP.3FXlLtdPju7_MYI0Rz7BVQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Olaplex No. 6">
+                <div class="card-body">
+                    <h5 class="card-title">Olaplex No. 6 Bond Smoother</h5>
+                    <p class="card-text">Reduces frizz and flyaways.</p>
+                    <p class="product-price">$30</p>
+                    <button class="btn btn-success add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-primary buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product-id="olaplex-7" data-product-name="Olaplex No. 7 Bonding Oil" data-product-price="28">
+            <div class="card product-card">
+                <img src="https://th.bing.com/th/id/OIP.3FXlLtdPju7_MYI0Rz7BVQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Olaplex No. 7">
+                <div class="card-body">
+                    <h5 class="card-title">Olaplex No. 7 Bonding Oil</h5>
+                    <p class="card-text">Adds shine and protects hair.</p>
+                    <p class="product-price">$28</p>
+                    <button class="btn btn-success add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-primary buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4" data-product-id="olaplex-8" data-product-name="Olaplex No. 8 Bond Intense Moisture Mask" data-product-price="32">
+            <div class="card product-card">
+                <img src="https://th.bing.com/th/id/OIP.3FXlLtdPju7_MYI0Rz7BVQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Olaplex No. 8">
+                <div class="card-body">
+                    <h5 class="card-title">Olaplex No. 8 Bond Intense Moisture Mask</h5>
+                    <p class="card-text">Deeply hydrates and repairs.</p>
+                    <p class="product-price">$32</p>
+                    <button class="btn btn-success add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-primary buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-3">
+    <p>© 2024 Olaplex. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="cart.js"></script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9357b3e9ccd6b066',t:'MTc0NTUxOTc1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
